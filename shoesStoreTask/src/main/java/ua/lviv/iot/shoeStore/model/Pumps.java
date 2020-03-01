@@ -1,7 +1,5 @@
 package ua.lviv.iot.shoeStore.model;
 
-import java.util.List;
-
 public class Pumps extends AbstractShoes {
 
 	private DegreeOfOpenness degreeOfOpenness;
