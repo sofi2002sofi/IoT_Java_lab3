@@ -8,6 +8,7 @@ ua\lviv\iot\shoeStore\model\Pumps.class
 ua\lviv\iot\shoeStore\manager\ShoppingManager.class
 ua\lviv\iot\shoeStore\manager\ShoppingManagerUtils.class
 ua\lviv\iot\shoeStore\model\SortType.class
+ua\lviv\iot\shoeStore\writer\ShoesWriter.class
 ua\lviv\iot\shoeStore\model\Sex.class
 ua\lviv\iot\shoeStore\model\Sneakers.class
 ua\lviv\iot\shoeStore\model\Boots.class
