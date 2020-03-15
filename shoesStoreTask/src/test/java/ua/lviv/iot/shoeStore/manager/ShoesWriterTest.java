@@ -19,14 +19,14 @@ public class ShoesWriterTest extends BaseShoppingManagerTest {
 	@Test
 	void writeToFileTest() throws IOException {
 		Writer csvFileWriter = new FileWriter("info.csv");
-		shoesWriter.setTextWriter(csvFileWriter);
+		shoesWriter.setInfoWriter(csvFileWriter);
 		shoesWriter.writeToFile(bestShoes);
 	}
 
 	@Test
 	void stringWriterTest() throws IOException {
 		String expectedResult = "";
-		shoesWriter.setTextWriter(new StringWriter());
+		shoesWriter.setInfoWriter(new StringWriter());
 		shoesWriter.writeToFile(bestShoes);
 		for (AbstractShoes shoes : bestShoes) {
 			expectedResult += shoes.getHeaders() + "\n";

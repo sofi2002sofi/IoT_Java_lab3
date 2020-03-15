@@ -28,4 +28,11 @@ public class Heels {
 		this.hightOfHeelsInSM = hightOfHeelsInSM;
 	}
 
+	public String getHeaders() {
+		return "heelsType" + "hightOfHeelsInSM";
+	}
+
+	public String toCSV() {
+		return getHeelsType() + "," + getHightOfHeelsInSM();
+	}
 }

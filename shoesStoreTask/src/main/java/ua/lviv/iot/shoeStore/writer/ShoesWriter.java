@@ -22,7 +22,7 @@ public class ShoesWriter {
 		infoWriter.close();
 	}
 
-	public void setTextWriter(Writer infoWriter) {
+	public void setInfoWriter(Writer infoWriter) {
 		this.infoWriter = infoWriter;
 	}
 

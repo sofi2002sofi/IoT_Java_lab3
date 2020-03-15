@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ua.lviv.iot.shoeStore.manager.ShoppingManagerUtilsTest" time="0.004" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ua.lviv.iot.shoeStore.manager.ShoppingManagerUtilsTest" time="0.005" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\LENOVO~1\AppData\Local\Temp\surefire5374790102558471581\surefirebooter7102161583838729025.jar C:\Users\Lenovo Ideapad\AppData\Local\Temp\surefire5374790102558471581 2020-03-10T23-02-35_761-jvmRun1 surefire3787509041146440007tmp surefire_016666529137891324430tmp"/>
+    <property name="sun.java.command" value="C:\Users\LENOVO~1\AppData\Local\Temp\surefire11748206056086239047\surefirebooter8078660685735431859.jar C:\Users\Lenovo Ideapad\AppData\Local\Temp\surefire11748206056086239047 2020-03-15T22-48-36_598-jvmRun1 surefire14242796613207981093tmp surefire_07058447498284254487tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\projects\iot_2020\IoT_Java_lab3\shoesStoreTask\target\test-classes;C:\projects\iot_2020\IoT_Java_lab3\shoesStoreTask\target\classes;C:\Users\Lenovo Ideapad\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.0\junit-jupiter-5.6.0.jar;C:\Users\Lenovo Ideapad\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Lenovo Ideapad\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Lenovo Ideapad\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Lenovo Ideapad\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Lenovo Ideapad\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\Lenovo Ideapad\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Lenovo Ideapad\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\LENOVO~1\AppData\Local\Temp\surefire5374790102558471581\surefirebooter7102161583838729025.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\LENOVO~1\AppData\Local\Temp\surefire11748206056086239047\surefirebooter8078660685735431859.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="13.0.1+9"/>

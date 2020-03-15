@@ -39,12 +39,12 @@ public class AbstractShoes {
 
 	public String getHeaders() {
 		return "sizeEURstandart" + "," + "priceInUAH" + "," + "assignment" + "," + "sex" + "," + "brand" + "," + "color"
-				+ "," + "materialOfVamp" + "," + "materialOfLining" + "," + "heels" + "," + "toecapType";
+				+ "," + "materialOfVamp" + "," + "materialOfLining" + "," + heels.getHeaders() + "," + "toecapType";
 	}
 
 	public String toCSV() {
 		return getSizeEURstandart() + "," + getPriceInUAH() + "," + getAssignment() + "," + getSex() + "," + getBrand()
-				+ "," + getColor() + "," + getMaterialOfVamp() + "," + getMaterialOfLining() + "," + getHeels() + ","
+				+ "," + getColor() + "," + getMaterialOfVamp() + "," + getMaterialOfLining() + "," + heels.toCSV() + ","
 				+ getToecapType();
 	}
 
