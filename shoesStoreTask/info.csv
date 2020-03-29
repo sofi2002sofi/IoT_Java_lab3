@@ -1,0 +1,14 @@
+sizeEURstandart,priceInUAH,assignment,sex,brand,color,materialOfVamp,materialOfLining,heelsTypehightOfHeelsInSM,toecapType,hightfShaftlnSM
+38,2059.0,winter,FEMALE,ECCO,black,skin,fur,pump,4.0,oval,35.5
+sizeEURstandart,priceInUAH,assignment,sex,brand,color,materialOfVamp,materialOfLining,heelsTypehightOfHeelsInSM,toecapType,hightfShaftlnSM
+41,1300.0,winter,FEMALE,CCC,blue,textile,textile,thickenedSole,1.4,square,24.6
+sizeEURstandart,priceInUAH,assignment,sex,brand,color,materialOfVamp,materialOfLining,heelsTypehightOfHeelsInSM,toecapType,hightfShaftlnSM
+39,2500.0,winter,FEMALE,Welfare,brown,leatherette,fur,pump,8.0,sharpToecap,34.0
+sizeEURstandart,priceInUAH,assignment,sex,brand,color,materialOfVamp,materialOfLining,heelsTypehightOfHeelsInSM,toecapType,degreeOfOpenness
+40,1600.0,classical,FEMALE,Anemone,red,suede,skin,platform,3.0,sharpToecap,WITHOUT_EXTRA_OPEN_SPACES
+sizeEURstandart,priceInUAH,assignment,sex,brand,color,materialOfVamp,materialOfLining,heelsTypehightOfHeelsInSM,toecapType,degreeOfOpenness
+40,999.0,classical,FEMALE,ECCO,black,skin,skin,pump,8.0,sharpToecap,OPEN_SIDE
+sizeEURstandart,priceInUAH,assignment,sex,brand,color,materialOfVamp,materialOfLining,heelsTypehightOfHeelsInSM,toecapType,eyeletsPresence,specification
+43,1250.0,sport,MALE,Nike,blue,textile,orthoLite,thickenedSole,1.4,oval,true,FOR_TRAINING
+sizeEURstandart,priceInUAH,assignment,sex,brand,color,materialOfVamp,materialOfLining,heelsTypehightOfHeelsInSM,toecapType,eyeletsPresence,specification
+43,1800.0,sport,FEMALE,NewBalance,gray,suede,orthoLite,thickenedSole,1.4,oval,true,FOR_RUNNING

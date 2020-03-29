@@ -1,7 +1,7 @@
 package ua.lviv.iot.shoeStore.model;
 
 public class Boots extends AbstractShoes {
-	
+
 	private double hightfShaftlnSM;
 
 	public double getHightfShaftlnSM() {
@@ -17,6 +17,14 @@ public class Boots extends AbstractShoes {
 		super(sizeEURstandart, priceInUAH, assignment, sex, brand, color, materialOfVamp, materialOfLining, heels,
 				toecapType);
 		this.hightfShaftlnSM = hightfShaftlnSM;
+	}
+
+	public String getHeaders() {
+		return super.getHeaders() + "," + "hightfShaftlnSM";
+	}
+
+	public String toCSV() {
+		return super.toCSV() + "," + getHightfShaftlnSM();
 	}
 
 }

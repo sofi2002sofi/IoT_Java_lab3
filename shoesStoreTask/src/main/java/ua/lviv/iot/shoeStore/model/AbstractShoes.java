@@ -22,8 +22,8 @@ public class AbstractShoes {
 
 	private String toecapType;
 
-	public AbstractShoes(int sizeEURstandart, double priceInUAH, String assignment, Sex sex, String brand,
-			String color, String materialOfVamp, String materialOfLining, Heels heels, String toecapType) {
+	public AbstractShoes(int sizeEURstandart, double priceInUAH, String assignment, Sex sex, String brand, String color,
+			String materialOfVamp, String materialOfLining, Heels heels, String toecapType) {
 		super();
 		this.sizeEURstandart = sizeEURstandart;
 		this.priceInUAH = priceInUAH;
@@ -35,6 +35,17 @@ public class AbstractShoes {
 		this.materialOfLining = materialOfLining;
 		this.heels = heels;
 		this.toecapType = toecapType;
+	}
+
+	public String getHeaders() {
+		return "sizeEURstandart" + "," + "priceInUAH" + "," + "assignment" + "," + "sex" + "," + "brand" + "," + "color"
+				+ "," + "materialOfVamp" + "," + "materialOfLining" + "," + heels.getHeaders() + "," + "toecapType";
+	}
+
+	public String toCSV() {
+		return getSizeEURstandart() + "," + getPriceInUAH() + "," + getAssignment() + "," + getSex() + "," + getBrand()
+				+ "," + getColor() + "," + getMaterialOfVamp() + "," + getMaterialOfLining() + "," + heels.toCSV() + ","
+				+ getToecapType();
 	}
 
 	public int getSizeEURstandart() {

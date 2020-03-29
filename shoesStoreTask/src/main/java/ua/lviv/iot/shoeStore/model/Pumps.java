@@ -19,5 +19,12 @@ public class Pumps extends AbstractShoes {
 				toecapType);
 		this.degreeOfOpenness = degreeOfOpenness;
 	}
-	
+
+	public String getHeaders() {
+		return super.getHeaders() + "," + "degreeOfOpenness";
+	}
+
+	public String toCSV() {
+		return super.toCSV() + "," + getDegreeOfOpenness();
+	}
 }
