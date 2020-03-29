@@ -22,6 +22,16 @@ public class AbstractShoes {
 
 	private String toecapType;
 
+	private Integer id;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
 	public AbstractShoes(int sizeEURstandart, double priceInUAH, String assignment, Sex sex, String brand, String color,
 			String materialOfVamp, String materialOfLining, Heels heels, String toecapType) {
 		super();
@@ -35,6 +45,10 @@ public class AbstractShoes {
 		this.materialOfLining = materialOfLining;
 		this.heels = heels;
 		this.toecapType = toecapType;
+	}
+
+	public AbstractShoes() {
+
 	}
 
 	public String getHeaders() {
