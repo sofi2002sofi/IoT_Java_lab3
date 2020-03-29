@@ -29,6 +29,7 @@ class ShoppingManagerTest extends BaseShoppingManagerTest {
 
 		List<AbstractShoes> suitableShoes = shoppingManager.findShoesBy(39);
 		assertEquals(1, suitableShoes.size());
+		assertEquals(39, suitableShoes.get(0).getSizeEURstandart());
 
 	}
 
@@ -37,6 +38,7 @@ class ShoppingManagerTest extends BaseShoppingManagerTest {
 
 		List<AbstractShoes> suitableShoes = shoppingManager.findShoesBy("winter");
 		assertEquals(3, suitableShoes.size());
+		assertEquals("winter", suitableShoes.get(0).getAssignment());
 
 	}
 
