@@ -2,5 +2,21 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.21.0" timestamp="2020-03-29T22:07:25.393">
+    version="6.21.0" timestamp="2020-04-04T23:41:05.890">
+<file name="C:\projects\iot_2020\IoT_Java_lab3\shoesStoreTask\src\main\java\ua\lviv\iot\shoeStore\controller\ShoesController.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="ua.lviv.iot.shoeStore.controller" class="ShoesController" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.util.LinkedList'
+</violation>
+<violation beginline="22" endline="22" begincolumn="1" endcolumn="49" rule="UnusedImports" ruleset="Best Practices" package="ua.lviv.iot.shoeStore.controller" class="ShoesController" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'ua.lviv.iot.shoeStore.model.AbstractShoes'
+</violation>
+<violation beginline="29" endline="29" begincolumn="37" endcolumn="41" rule="UnusedPrivateField" ruleset="Best Practices" package="ua.lviv.iot.shoeStore.controller" class="ShoesController" variable="shoes" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'shoes'.
+</violation>
+</file>
+<file name="C:\projects\iot_2020\IoT_Java_lab3\shoesStoreTask\src\main\java\ua\lviv\iot\shoeStore\model\Heels.java">
+<violation beginline="23" endline="23" begincolumn="31" endcolumn="35" rule="UnusedPrivateField" ruleset="Best Practices" package="ua.lviv.iot.shoeStore.model" class="Heels" variable="shoes" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'shoes'.
+</violation>
+</file>
 </pmd>

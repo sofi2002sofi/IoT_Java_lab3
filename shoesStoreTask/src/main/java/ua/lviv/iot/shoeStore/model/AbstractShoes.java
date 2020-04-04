@@ -1,5 +1,11 @@
 package ua.lviv.iot.shoeStore.model;
 
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.MappedSuperclass;
+import javax.persistence.OneToOne;
+
+@MappedSuperclass
 public class AbstractShoes {
 
 	private int sizeEURstandart;
@@ -18,19 +24,11 @@ public class AbstractShoes {
 
 	private String materialOfLining;
 
+	@OneToOne( fetch = FetchType.LAZY )
+	@JoinColumn(name = "post_id")
 	private Heels heels;
 
 	private String toecapType;
-
-	private Integer id;
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
 
 	public AbstractShoes(int sizeEURstandart, double priceInUAH, String assignment, Sex sex, String brand, String color,
 			String materialOfVamp, String materialOfLining, Heels heels, String toecapType) {

@@ -6,12 +6,17 @@ ua\lviv\iot\shoeStore\manager\ShoppingManagerUtils$ShoesSortedByBrand.class
 ua\lviv\iot\shoeStore\model\Heels.class
 ua\lviv\iot\shoeStore\model\Pumps.class
 ua\lviv\iot\shoeStore\manager\ShoppingManager.class
+ua\lviv\iot\shoeStore\controller\HeelsController.class
 ua\lviv\iot\shoeStore\manager\ShoppingManagerUtils.class
+ua\lviv\iot\dataaccess\HeelsRepository.class
 ua\lviv\iot\shoeStore\model\SortType.class
+ua\lviv\iot\dataaccess\BootsRepository.class
 ua\lviv\iot\shoeStore\controller\ShoesController.class
 ua\lviv\iot\shoeStore\writer\ShoesWriter.class
+ua\lviv\iot\business\BootsService.class
 ua\lviv\iot\shoeStore\model\Sex.class
 ua\lviv\iot\shoeStore\model\Sneakers.class
+ua\lviv\iot\business\HeelsService.class
 ua\lviv\iot\shoeStore\model\Boots.class
 ua\lviv\iot\shoeStore\model\AbstractShoes.class
 ua\lviv\iot\shoeStore\model\DegreeOfOpenness.class

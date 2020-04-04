@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import ua.lviv.iot.business.BootsService;
 import ua.lviv.iot.shoeStore.model.AbstractShoes;
 import ua.lviv.iot.shoeStore.model.Boots;
 
@@ -24,40 +26,43 @@ import ua.lviv.iot.shoeStore.model.Boots;
 @RestController
 public class ShoesController {
 
-	private Map<Integer, AbstractShoes> shoes = new HashMap<Integer, AbstractShoes>();
+	private Map<Integer, Boots> shoes = new HashMap<Integer, Boots>();
 
 	private AtomicInteger idCounter = new AtomicInteger();
 
+	@Autowired
+	private BootsService bootsService;
+
 	@GetMapping
-	public List<AbstractShoes> getShoes() {
-		return new LinkedList<AbstractShoes>(shoes.values());
+	public List<Boots> getShoes() {
+
+		return bootsService.findAll();
 	}
 
 	@GetMapping(path = "/{id}")
-	public AbstractShoes getShoes(final @PathVariable("id") Integer shoesId) {
-		return shoes.get(shoesId);
+	public Boots getShoes(final @PathVariable("id") Integer shoesId) {
+
+		return bootsService.findBoot(shoesId);
 	}
 
 	@PostMapping
-	public AbstractShoes createShoes(@RequestBody Boots boot) {
+	public Boots createShoes(final @RequestBody Boots boot) {
+
 		boot.setId(idCounter.incrementAndGet());
-		shoes.put(boot.getId(), boot);
+		bootsService.createBoots(boot);
 		return boot;
 	}
 
 	@DeleteMapping(path = "/{id}")
-	public ResponseEntity<AbstractShoes> deleteShoes(@PathVariable("id") Integer shoesId) {
+	public ResponseEntity<Boots> deleteShoes(final @PathVariable("id") Integer shoesId) {
 
-		HttpStatus status = shoes.remove(shoesId) == null ? HttpStatus.NOT_FOUND : HttpStatus.OK;
+		HttpStatus status = bootsService.deleteBoots(shoesId);
 		return ResponseEntity.status(status).build();
 	}
 
 	@PutMapping(path = "/{id}")
-	public ResponseEntity<AbstractShoes> updateShoes(final @PathVariable("id") Integer shoesId,
-			@RequestBody AbstractShoes shoe) {
-		shoe.setId(shoesId);
-		HttpStatus status = shoes.put(shoesId, shoe) != null ? HttpStatus.OK : HttpStatus.NOT_FOUND;
-		return ResponseEntity.status(status).build();
+	public ResponseEntity<Boots> updateShoes(final @PathVariable("id") Integer shoesId, @RequestBody Boots shoe) {
 
+		return bootsService.updateBoots(shoe, shoesId);
 	}
 }

@@ -1,10 +1,38 @@
 package ua.lviv.iot.shoeStore.model;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+@Entity
 public class Heels {
 
 	private String heelsType;
 
 	private double hightOfHeelsInSM;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Integer id;
+
+	@OneToOne(mappedBy = "heels", cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false)
+	private AbstractShoes shoes;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Heels() {
+
+	}
 
 	public Heels(String heelsType, double hightOfHeelsInSM) {
 		super();
