@@ -19,9 +19,6 @@ public class Heels {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 
-	@OneToOne(mappedBy = "heels", cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false)
-	private AbstractShoes shoes;
-
 	public Integer getId() {
 		return id;
 	}

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan({"ua.lviv.iot.business", "ua.lviv.iot.dataaccess", "ua.lviv.iot.shoeStore"})
-@EnableJpaRepositories("ua.lviv.iot.daaccess")
+@EnableJpaRepositories("ua.lviv.iot.dataaccess")
 public class RestApplication {
 
 	public static void main(String[] args) {

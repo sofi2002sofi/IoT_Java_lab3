@@ -1,9 +1,12 @@
 package ua.lviv.iot.shoeStore.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.MappedSuperclass;
 import javax.persistence.OneToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @MappedSuperclass
 public class AbstractShoes {
@@ -24,8 +27,9 @@ public class AbstractShoes {
 
 	private String materialOfLining;
 
-	@OneToOne( fetch = FetchType.LAZY )
-	@JoinColumn(name = "post_id")
+	@OneToOne( fetch = FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name = "heels_id")
+	//@JsonIgnoreProperties("shoes")
 	private Heels heels;
 
 	private String toecapType;

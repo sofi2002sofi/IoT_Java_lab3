@@ -49,5 +49,5 @@ public class Boots extends AbstractShoes {
 		super(0, 0.0, null, null, null, null, null, null, new Heels(null, 0.0), null);
 		this.hightfShaftlnSM = 0.0;
 	}
-
+	
 }
