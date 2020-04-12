@@ -1,5 +1,9 @@
-#Sat Apr 04 23:41:38 EEST 2020
+#Sun Apr 12 11:00:29 EEST 2020
 configuration*?=CD1F3E594245E0302B515B1BB4C200BD7B0E5527
-C\:\\projects\\iot_2020\\IoT_Java_lab3\\shoesStoreTask\\src\\main\\resources\\application.properties=1586028599597
+C\:\\projects\\iot_2020\\IoT_Java_lab3\\shoesStoreTask\\src\\main\\resources\\application.properties=1586156930042
+C\:\\projects\\iot_2020\\IoT_Java_lab3\\shoesStoreTask\\src\\main\\java\\ua\\lviv\\iot\\dataaccess\\HeelsRepository.java=1586677711872
 module-resource*?\:checkstyle-xpath-suppressions.xml=9C390D383CDD6EF48D1096629BAF21D6C099CD15
 module-resource*?\:checkstyle-suppressions.xml=25A4C474E53C4B73E3B8E24D22D3213C85EF82D4
+C\:\\projects\\iot_2020\\IoT_Java_lab3\\shoesStoreTask\\src\\main\\java\\ua\\lviv\\iot\\dataaccess\\BootsProducerRepository.java=1586677711926
+C\:\\projects\\iot_2020\\IoT_Java_lab3\\shoesStoreTask\\src\\main\\java\\ua\\lviv\\iot\\dataaccess\\BootsFunctionRepository.java=1586677711944
+C\:\\projects\\iot_2020\\IoT_Java_lab3\\shoesStoreTask\\src\\main\\java\\ua\\lviv\\iot\\dataaccess\\BootsRepository.java=1586677711901

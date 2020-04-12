@@ -25,9 +25,9 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 20,
+      <title>File: 28,
              Errors: 0,
-             Warnings: 796,
+             Warnings: 562,
              Infos: 0
       </title>
             <link>http://maven.apache.org/checkstyle.html</link>
@@ -46,27 +46,13 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.manager.ShoppingManager.java">ua/lviv/iot/shoeStore/manager/ShoppingManager.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  50
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.Sneakers.java">ua/lviv/iot/shoeStore/model/Sneakers.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  61
+                  33
                 </td>
                 <td>
                   0
@@ -74,13 +60,27 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.business.BootsService.java">ua/lviv/iot/business/BootsService.java</a>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.business.BootsFunctionService.java">ua/lviv/iot/business/BootsFunctionService.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  59
+                  30
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.controller.BootsFunctionController.java">ua/lviv/iot/shoeStore/controller/BootsFunctionController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
                 </td>
                 <td>
                   0
@@ -94,21 +94,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  1
-                </td>
-                <td>
                   0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.SortType.java">ua/lviv/iot/shoeStore/model/SortType.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
                 </td>
                 <td>
                   0
@@ -122,7 +108,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  14
+                  5
                 </td>
                 <td>
                   0
@@ -136,21 +122,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  3
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.Boots.java">ua/lviv/iot/shoeStore/model/Boots.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  69
+                  1
                 </td>
                 <td>
                   0
@@ -164,7 +136,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  77
+                  37
                 </td>
                 <td>
                   0
@@ -178,7 +150,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  3
+                  1
                 </td>
                 <td>
                   0
@@ -200,13 +172,13 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.Pumps.java">ua/lviv/iot/shoeStore/model/Pumps.java</a>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.BootsProducer.java">ua/lviv/iot/shoeStore/model/BootsProducer.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  45
+                  31
                 </td>
                 <td>
                   0
@@ -214,13 +186,13 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.dataaccess.HeelsRepository.java">ua/lviv/iot/dataaccess/HeelsRepository.java</a>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.Pumps.java">ua/lviv/iot/shoeStore/model/Pumps.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  1
+                  24
                 </td>
                 <td>
                   0
@@ -234,7 +206,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  54
+                  20
                 </td>
                 <td>
                   0
@@ -248,21 +220,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  210
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.Sex.java">ua/lviv/iot/shoeStore/model/Sex.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  3
+                  110
                 </td>
                 <td>
                   0
@@ -276,35 +234,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  7
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.business.HeelsService.java">ua/lviv/iot/business/HeelsService.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  11
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.manager.ShoppingManagerUtils.java">ua/lviv/iot/shoeStore/manager/ShoppingManagerUtils.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  88
+                  4
                 </td>
                 <td>
                   0
@@ -318,7 +248,189 @@ under the License.
                   0
                 </td>
                 <td>
-                  38
+                  19
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.manager.ShoppingManager.java">ua/lviv/iot/shoeStore/manager/ShoppingManager.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  27
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.business.BootsService.java">ua/lviv/iot/business/BootsService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  29
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.dataaccess.BootsFunctionRepository.java">ua/lviv/iot/dataaccess/BootsFunctionRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.SortType.java">ua/lviv/iot/shoeStore/model/SortType.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.business.BootsProducerService.java">ua/lviv/iot/business/BootsProducerService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  30
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.Boots.java">ua/lviv/iot/shoeStore/model/Boots.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  50
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.BootsFunction.java">ua/lviv/iot/shoeStore/model/BootsFunction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.dataaccess.BootsProducerRepository.java">ua/lviv/iot/dataaccess/BootsProducerRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.dataaccess.HeelsRepository.java">ua/lviv/iot/dataaccess/HeelsRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.model.Sex.java">ua/lviv/iot/shoeStore/model/Sex.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.controller.BootsProducerController.java">ua/lviv/iot/shoeStore/controller/BootsProducerController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.business.HeelsService.java">ua/lviv/iot/business/HeelsService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://maven.apache.org/checkstyle.html#ua.lviv.iot.shoeStore.manager.ShoppingManagerUtils.java">ua/lviv/iot/shoeStore/manager/ShoppingManagerUtils.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  40
                 </td>
                 <td>
                   0
