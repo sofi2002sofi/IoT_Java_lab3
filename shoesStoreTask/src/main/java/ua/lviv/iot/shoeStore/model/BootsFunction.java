@@ -2,7 +2,6 @@ package ua.lviv.iot.shoeStore.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.Set;
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -21,7 +20,7 @@ public class BootsFunction {
 
     private String name;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "Functions_Boots", joinColumns = {
             @JoinColumn(name = "bootsFunction_id", nullable = false) }, inverseJoinColumns = {
                     @JoinColumn(name = "boots_id", nullable = false) })

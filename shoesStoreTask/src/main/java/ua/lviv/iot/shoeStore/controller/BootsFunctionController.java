@@ -30,28 +30,43 @@ public class BootsFunctionController {
     @GetMapping(path = "/{id}")
     public BootsFunction getBootsFunction(final @PathVariable("id") Integer functionId) {
 
-        return bootsFunctionService.findBootsFunction(functionId);
+        return bootsFunctionService.findObjectById(functionId);
     }
 
     @PostMapping
     public BootsFunction createBootsFunction(final @RequestBody BootsFunction bootsFunction) {
 
-        return bootsFunctionService.createBootsFunction(bootsFunction);
+        return bootsFunctionService.createObject(bootsFunction);
 
     }
 
     @DeleteMapping(path = "/{id}")
     public ResponseEntity<BootsFunction> deleteBootsFunction(final @PathVariable("id") Integer functionId) {
 
-        HttpStatus status = bootsFunctionService.deleteBootsFunction(functionId);
-        return ResponseEntity.status(status).build();
+        HttpStatus status;
+        if (bootsFunctionService.existById(functionId)) {
+            bootsFunctionService.deleteById(functionId);
+            status = HttpStatus.OK;
+            return ResponseEntity.status(status).build();
+        } else {
+            status = HttpStatus.NOT_FOUND;
+            return ResponseEntity.status(status).build();
+        }
+
     }
 
     @PutMapping(path = "/{id}")
     public ResponseEntity<BootsFunction> updateBootsFunction(final @PathVariable("id") Integer functionId,
             @RequestBody BootsFunction bootsFunction) {
 
-        return bootsFunctionService.updateBootsFunction(bootsFunction, functionId);
+        if (bootsFunctionService.existById(functionId)) {
+            bootsFunction.setId(functionId);
+            BootsFunction changedBootsFunction = bootsFunctionService.createObject(bootsFunction);
+            return new ResponseEntity<BootsFunction>(changedBootsFunction, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<BootsFunction>(HttpStatus.NOT_FOUND);
+        }
+
     }
 
 }

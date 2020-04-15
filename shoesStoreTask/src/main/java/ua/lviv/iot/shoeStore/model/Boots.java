@@ -2,7 +2,6 @@ package ua.lviv.iot.shoeStore.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.Set;
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -27,7 +26,7 @@ public class Boots extends AbstractShoes {
     @JsonIgnoreProperties("boots")
     private BootsProducer bootsProducer;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "Functions_Boots", joinColumns = {
             @JoinColumn(name = "boots_id", nullable = false) }, inverseJoinColumns = {
                     @JoinColumn(name = "bootsFunction_id", nullable = false) })

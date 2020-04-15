@@ -30,26 +30,41 @@ public class BootsProducerController {
     @GetMapping(path = "/{id}")
     public BootsProducer getBootsProducer(final @PathVariable("id") Integer producerId) {
 
-        return bootsProducerService.findBootsProducer(producerId);
+        return bootsProducerService.findObjectById(producerId);
     }
 
     @PostMapping
     public BootsProducer createBootsProducer(final @RequestBody BootsProducer bootsProducer) {
 
-        return bootsProducerService.createBootsProducer(bootsProducer);
+        return bootsProducerService.createObject(bootsProducer);
     }
 
     @DeleteMapping(path = "/{id}")
     public ResponseEntity<BootsProducer> deleteBootsProducer(final @PathVariable("id") Integer producerId) {
 
-        HttpStatus status = bootsProducerService.deleteBootsProducer(producerId);
-        return ResponseEntity.status(status).build();
+        HttpStatus status;
+        if (bootsProducerService.existById(producerId)) {
+            bootsProducerService.deleteById(producerId);
+            status = HttpStatus.OK;
+            return ResponseEntity.status(status).build();
+        } else {
+            status = HttpStatus.NOT_FOUND;
+            return ResponseEntity.status(status).build();
+        }
+
     }
 
     @PutMapping(path = "/{id}")
-    public ResponseEntity<BootsProducer> updateBootsProducer(final @PathVariable("id") Integer producerId,
+    public ResponseEntity<BootsProducer> updateBootsFunction(final @PathVariable("id") Integer producerId,
             @RequestBody BootsProducer bootsProducer) {
 
-        return bootsProducerService.updateBootsProducer(bootsProducer, producerId);
+        if (bootsProducerService.existById(producerId)) {
+            bootsProducer.setId(producerId);
+            BootsProducer changedBootsProducer = bootsProducerService.createObject(bootsProducer);
+            return new ResponseEntity<BootsProducer>(changedBootsProducer, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<BootsProducer>(HttpStatus.NOT_FOUND);
+        }
     }
+
 }

@@ -31,25 +31,41 @@ public class ShoesController {
     @GetMapping(path = "/{id}")
     public Boots getShoe(final @PathVariable("id") Integer shoesId) {
 
-        return bootsService.findBoot(shoesId);
+        return bootsService.findObjectById(shoesId);
     }
 
     @PostMapping
     public Boots createShoes(final @RequestBody Boots boot) {
 
-        return bootsService.createBoots(boot);
+        return bootsService.createObject(boot);
     }
 
     @DeleteMapping(path = "/{id}")
     public ResponseEntity<Boots> deleteShoes(final @PathVariable("id") Integer shoesId) {
 
-        HttpStatus status = bootsService.deleteBoots(shoesId);
-        return ResponseEntity.status(status).build();
+        HttpStatus status;
+        if (bootsService.existById(shoesId)) {
+            bootsService.deleteById(shoesId);
+            status = HttpStatus.OK;
+            return ResponseEntity.status(status).build();
+        } else {
+            status = HttpStatus.NOT_FOUND;
+            return ResponseEntity.status(status).build();
+        }
+
     }
 
     @PutMapping(path = "/{id}")
-    public ResponseEntity<Boots> updateShoes(final @PathVariable("id") Integer shoesId, @RequestBody Boots shoe) {
+    public ResponseEntity<Boots> updateBootsFunction(final @PathVariable("id") Integer shoesId,
+            @RequestBody Boots shoe) {
 
-        return bootsService.updateBoots(shoe, shoesId);
+        if (bootsService.existById(shoesId)) {
+            shoe.setId(shoesId);
+            Boots changedBootsFunction = bootsService.createObject(shoe);
+            return new ResponseEntity<Boots>(changedBootsFunction, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<Boots>(HttpStatus.NOT_FOUND);
+        }
+
     }
 }

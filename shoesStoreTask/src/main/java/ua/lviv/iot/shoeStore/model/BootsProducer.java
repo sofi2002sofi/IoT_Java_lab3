@@ -22,7 +22,7 @@ public class BootsProducer {
 
     private String headquarters;
 
-    @OneToMany(mappedBy = "bootsProducer", fetch = FetchType.EAGER)
+    @OneToMany(fetch = FetchType.EAGER)
     @JsonIgnoreProperties("bootsProducer")
     private Set<Boots> boots;
 
